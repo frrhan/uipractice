@@ -39,7 +39,7 @@ class Testpage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "HEALTH TIPS",
+                          "HEALTH TIPS..",
                           style: GoogleFonts.poppins(
                             fontSize: 10,
                             fontWeight: FontWeight.w400,
