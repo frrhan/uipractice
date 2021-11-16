@@ -1,37 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:prac/style/colorstyle.dart';
+import 'package:prac/style/textstyle.dart';
 
-class RowList extends StatelessWidget {
-  String title;
-  String price;
+class Card1 extends StatelessWidget {
+  String text1;
+  String text2;
 
-  RowList({
-    this.title,
-    this.price,
+  Card1({
+    this.text1,
+    this.text2,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            title,
-            style: GoogleFonts.poppins(
-              fontSize: 16,
-              fontWeight: FontWeight.w300,
-              color: Color(0xff191919),
+    return Container(
+      height: 112,
+      width: 244,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        color: Colors.white54,
+        // border: Border.all(color: Colors.black),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Row(
+          children: [
+            Container(
+              height: 80,
+              width: 80,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/card1.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
-          ),
-          Text("\$ $price",
-              style: GoogleFonts.poppins(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: Color(0xff191919),
-              ))
-        ],
+            SizedBox(
+              width: 8,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Overline(
+                  text: text1,
+                  textcolor: quantumBlack70,
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Subtitle1(
+                  text: text2,
+                  textcolor: quantumBlack100,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
