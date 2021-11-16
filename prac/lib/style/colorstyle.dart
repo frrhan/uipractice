@@ -15,7 +15,7 @@ Color secondaryNavy50 = Color(0XFF9DA7BE);
 Color quantumBlack100 = Color(0XFF201E1D);
 Color quantumBlack90 = Color(0XFF373534);
 Color quantumBlack70 = Color(0XFF636261);
-Color quantumBlack50 = Color(0XFFA6A6A6);
+Color quantumBlack40 = Color(0XFFA6A6A6);
 
 Color whiteBackground = Color(0XFFF4F5F5);
 

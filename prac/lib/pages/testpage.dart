@@ -16,6 +16,19 @@ class Testpage extends StatelessWidget {
             child: Card1(
               text1: "Health Tips",
               text2: "Do You Feel \nLike Burn Out? ",
+              pic: 'assets/card1.png',
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Card2(
+              name: "Dokter",
+              mukadokter: 'assets/card1.png',
+              specialist: "Dentist",
+              price: "Rp banyak",
+              disprice: "Murah bet!!!",
             ),
           ),
         ],
